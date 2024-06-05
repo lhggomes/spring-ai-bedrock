@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: springai  # Application name
+  ai:
+    bedrock:
+      aws:
+        region: us-east-1  # AWS Region
+        timeout: 5m       # Timeout for AWS interactions (5 minutes)
+        access-key: ${ACCESS_KEY}  # Placeholder for access key
+        secret-key: ${SECRET_KEY}  # Placeholder for secret key
+      llama:
+        chat:
+          enabled: true  # Enable Llama chat model

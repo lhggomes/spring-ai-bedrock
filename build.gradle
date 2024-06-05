@@ -26,13 +26,9 @@ repositories {
 
 dependencies {
     implementation platform("org.springframework.ai:spring-ai-bom:1.0.0-SNAPSHOT")
-    // Replace the following with the starter dependencies of specific modules you wish to use
-    implementation 'org.springframework.ai:spring-ai-openai'
     implementation 'org.springframework.boot:spring-boot-starter'  // General starter
-
-    // Reactive Web Server dependency for your reactive application
     implementation 'org.springframework.boot:spring-boot-starter-webflux'
-
+    implementation 'org.springframework.ai:spring-ai-bedrock-ai-spring-boot-starter'
     compileOnly 'org.projectlombok:lombok'
     annotationProcessor 'org.projectlombok:lombok'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
